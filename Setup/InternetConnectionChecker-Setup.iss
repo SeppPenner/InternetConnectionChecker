@@ -2,10 +2,11 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "InternetConnectionChecker"
-#define MyAppVersion "1.0.0.0"
+#define MyAppVersion "1.0.0.1"
 #define MyAppPublisher "Hämmer Electronics"
 #define MyAppURL "http://www.softwareload24.de.tl/"
 #define MyAppExeName "InternetConnectionChecker.exe"
+#define MyPath "F:\TODO\C# und VB\InternetConnectionChecker"
 
 [Setup]
 ; NOTE: The value of AppId uniquely identifies this application.
@@ -25,10 +26,10 @@ AppUpdatesURL={#MyAppURL}
 DefaultDirName={pf}\{#MyAppName}
 DefaultGroupName={#MyAppName}
 AllowNoIcons=yes
-LicenseFile=C:\Users\tim\Desktop\InternetConnectionChecker\InternetConnectionChecker\License.txt
-OutputDir=C:\Users\tim\Desktop\InternetConnectionChecker\Setup
+LicenseFile={#MyPath}\InternetConnectionChecker\License.txt
+OutputDir={#MyPath}\Setup
 OutputBaseFilename=InternetConnectionChecker-Setup
-SetupIconFile=C:\Users\tim\Desktop\InternetConnectionChecker\InternetConnectionChecker\Connected.ico
+SetupIconFile={#MyPath}\InternetConnectionChecker\Connected.ico
 Compression=lzma
 SolidCompression=yes
 
@@ -65,11 +66,11 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{
 Name: "quicklaunchicon"; Description: "{cm:CreateQuickLaunchIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked; OnlyBelowVersion: 0,6.1
 
 [Files]
-Source: "C:\Users\tim\Desktop\InternetConnectionChecker\InternetConnectionChecker\bin\Debug\InternetConnectionChecker.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\tim\Desktop\InternetConnectionChecker\InternetConnectionChecker\Connected.ico"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\tim\Desktop\InternetConnectionChecker\InternetConnectionChecker\Green.ico"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\tim\Desktop\InternetConnectionChecker\InternetConnectionChecker\License.txt"; DestDir: "{app}"; Flags: ignoreversion
-Source: "C:\Users\tim\Desktop\InternetConnectionChecker\InternetConnectionChecker\Red.ico"; DestDir: "{app}"; Flags: ignoreversion
+Source: "{#MyPath}\InternetConnectionChecker\bin\Debug\InternetConnectionChecker.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "{#MyPath}\InternetConnectionChecker\Connected.ico"; DestDir: "{app}"; Flags: ignoreversion
+Source: "{#MyPath}\InternetConnectionChecker\Green.ico"; DestDir: "{app}"; Flags: ignoreversion
+Source: "{#MyPath}\InternetConnectionChecker\License.txt"; DestDir: "{app}"; Flags: ignoreversion
+Source: "{#MyPath}\InternetConnectionChecker\Red.ico"; DestDir: "{app}"; Flags: ignoreversion
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Icons]
