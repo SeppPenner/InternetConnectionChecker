@@ -2,11 +2,11 @@
 ; SEE THE DOCUMENTATION FOR DETAILS ON CREATING INNO SETUP SCRIPT FILES!
 
 #define MyAppName "InternetConnectionChecker"
-#define MyAppVersion "1.0.0.1"
+#define MyAppVersion "1.0.0.2"
 #define MyAppPublisher "Hämmer Electronics"
 #define MyAppURL "http://www.softwareload24.de.tl/"
 #define MyAppExeName "InternetConnectionChecker.exe"
-#define MyPath "F:\TODO\C# und VB\InternetConnectionChecker"
+#define MyPath "C:\Users\tim\Desktop\Updaten_Snyk\InternetConnectionChecker"
 
 [Setup]
 ; NOTE: The value of AppId uniquely identifies this application.
