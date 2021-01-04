@@ -42,6 +42,7 @@ Name: "quicklaunchicon"; Description: "{cm:CreateQuickLaunchIcon}"; GroupDescrip
 
 [Files]
 Source: "..\src\InternetConnectionChecker\bin\Release\net5.0-windows\InternetConnectionChecker.exe"; DestDir: "{app}"; Flags: ignoreversion
+Source: "..\src\InternetConnectionChecker\bin\Release\net5.0-windows\InternetConnectionChecker.dll"; DestDir: "{app}"; Flags: ignoreversion
 Source: "..\src\InternetConnectionChecker\Connected.ico"; DestDir: "{app}"; Flags: ignoreversion
 Source: "..\src\InternetConnectionChecker\Green.ico"; DestDir: "{app}"; Flags: ignoreversion
 Source: "..\src\InternetConnectionChecker\License.txt"; DestDir: "{app}"; Flags: ignoreversion
