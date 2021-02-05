@@ -41,12 +41,7 @@ Name: "desktopicon"; Description: "{cm:CreateDesktopIcon}"; GroupDescription: "{
 Name: "quicklaunchicon"; Description: "{cm:CreateQuickLaunchIcon}"; GroupDescription: "{cm:AdditionalIcons}"; Flags: unchecked; OnlyBelowVersion: 0,6.1
 
 [Files]
-Source: "..\src\InternetConnectionChecker\bin\Release\net5.0-windows\InternetConnectionChecker.exe"; DestDir: "{app}"; Flags: ignoreversion
-Source: "..\src\InternetConnectionChecker\bin\Release\net5.0-windows\InternetConnectionChecker.dll"; DestDir: "{app}"; Flags: ignoreversion
-Source: "..\src\InternetConnectionChecker\Connected.ico"; DestDir: "{app}"; Flags: ignoreversion
-Source: "..\src\InternetConnectionChecker\Green.ico"; DestDir: "{app}"; Flags: ignoreversion
-Source: "..\src\InternetConnectionChecker\License.txt"; DestDir: "{app}"; Flags: ignoreversion
-Source: "..\src\InternetConnectionChecker\Red.ico"; DestDir: "{app}"; Flags: ignoreversion
+Source: "..\src\InternetConnectionChecker\bin\publish\*"; DestDir: "{app}\languages\"; Flags: ignoreversion recursesubdirs createallsubdirs
 ; NOTE: Don't use "Flags: ignoreversion" on any shared system files
 
 [Icons]

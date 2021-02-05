@@ -12,7 +12,7 @@ The executable is written and tested in .Net 5.0.
 [![Known Vulnerabilities](https://snyk.io/test/github/SeppPenner/InternetConnectionChecker/badge.svg)](https://snyk.io/test/github/SeppPenner/InternetConnectionChecker)
 
 
-## Screenshot from the executable:
+## Screenshot from the executable
 ![Screenshot from the executable](https://github.com/SeppPenner/InternetConnectionChecker/blob/master/Screenshot_DE.PNG "Screenshot from the executable")
 
 Change history
