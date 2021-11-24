@@ -2,7 +2,6 @@ InternetConnectionChecker
 =========================
 
 InternetConnectionChecker is a software to check the current internet connection permanently.
-The executable is written and tested in .Net 5.0.
 
 [![Build status](https://ci.appveyor.com/api/projects/status/wgivlbu3iomt0p0g?svg=true)](https://ci.appveyor.com/project/SeppPenner/internetconnectionchecker)
 [![GitHub issues](https://img.shields.io/github/issues/SeppPenner/InternetConnectionChecker.svg)](https://github.com/SeppPenner/InternetConnectionChecker/issues)
