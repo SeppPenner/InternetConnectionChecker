@@ -26,17 +26,17 @@ namespace InternetConnectionChecker
         /// <summary>
         /// The background ping worker.
         /// </summary>
-        private BackgroundWorker backgroundPing;
+        private BackgroundWorker backgroundPing = new();
 
         /// <summary>
         /// The green color.
         /// </summary>
-        private Bitmap green;
+        private Bitmap green = new Bitmap(1, 1);
 
         /// <summary>
         /// The red color.
         /// </summary>
-        private Bitmap red;
+        private Bitmap red = new Bitmap(1, 1);
 
         /// <summary>
         /// Initializes a new instance of the <see cref="Main"/> class.
@@ -115,8 +115,6 @@ namespace InternetConnectionChecker
                     () => { this.pictureBoxConnected.Image = IsConnected() ? this.green : this.red; });
                 Thread.Sleep(1000);
             }
-
-            // ReSharper disable once FunctionNeverReturns
         }
     }
 }
