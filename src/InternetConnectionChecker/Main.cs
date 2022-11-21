@@ -22,12 +22,12 @@ public partial class Main : Form
     /// <summary>
     /// The green color.
     /// </summary>
-    private Bitmap green = new Bitmap(1, 1);
+    private Bitmap green = new(1, 1);
 
     /// <summary>
     /// The red color.
     /// </summary>
-    private Bitmap red = new Bitmap(1, 1);
+    private Bitmap red = new(1, 1);
 
     /// <summary>
     /// Initializes a new instance of the <see cref="Main"/> class.
@@ -89,7 +89,7 @@ public partial class Main : Form
     private void InitializeBackgroundPing()
     {
         this.backgroundPing = new BackgroundWorker { WorkerSupportsCancellation = true };
-        this.backgroundPing.DoWork += this.CheckInternetConnection;
+        this.backgroundPing.DoWork += this.CheckInternetConnection!;
         this.backgroundPing.RunWorkerAsync();
     }
 
